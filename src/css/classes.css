@@ -1,0 +1,19 @@
+.container {
+  display: flex; /* Use flexbox to align navbar and tiles horizontally */
+  height: 100vh; /* Make the container take full viewport height */
+  background: linear-gradient(to bottom left, #05488b, #0d6dc1, #3e8cd9);
+}
+
+.navbar-container {
+  flex: 0 0 250px; /* Set the width of the navbar (250px in this case) */
+  background-color: #f7f7f7;
+  border-right: 1px solid #ddd;
+  /* padding: 10px; */
+}
+
+.tiles-container {
+  flex: 1; /* Tiles container takes up the remaining space */
+  padding: 20px;
+  background-color: #fff;
+  overflow-y: auto; /* Allow scrolling if content overflows */
+}

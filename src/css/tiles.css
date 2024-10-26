@@ -1,0 +1,60 @@
+/* .subject-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(200px, 1fr)
+  ); 
+  gap: 20px; 
+  padding: 20px;
+}
+
+.items {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.items div {
+  margin-bottom: 10px;
+}
+
+.items:hover {
+  background-color: #f9f9f9;
+  transform: translateY(-5px); 
+  cursor: pointer;
+} */
+
+/* Tiles.css */
+/* Tiles.css */
+.tiles-container {
+  flex: 1; /* Takes up the remaining space next to the Navbar */
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(180px, 1fr)
+  ); /* Defines tile size */
+  grid-gap: 20px; /* Creates space between tiles */
+  align-items: start; /* Aligns tiles at the start of the grid */
+  background-color: #fff;
+}
+
+.items {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  background-color: white;
+  min-height: 100px; /* Minimum height for tiles */
+  max-height: auto; /* Allow height to adjust based on content */
+}
+
+.items:hover {
+  transform: translateY(-5px);
+  background-color: #f0f0f0;
+  cursor: pointer;
+}

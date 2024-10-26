@@ -1,0 +1,48 @@
+/* Classes.css */
+.container {
+  display: flex;
+
+  height: 100vh;
+}
+
+.navbar-container {
+  flex: 0 0 250px; /* Fixed width for the navbar */
+  background-color: #f7f7f7;
+  border-right: 1px solid #ddd;
+  padding: 20px;
+  overflow-y: auto; /* Allow scrolling if needed */
+}
+
+.tiles-container {
+  flex: 1; /* Remaining space goes to the Tiles section */
+  padding: 20px;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adds spacing between tiles */
+  justify-content: flex-start; /* Align tiles to the left */
+}
+
+/* Navbar.css */
+.item {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.item:hover {
+  background-color: #e0e0e0; /* Change background on hover */
+}
+
+.item.selected {
+  background-color: #cfe8ff; /* Highlight selected class */
+}
+
+/* Ensure proper box-sizing to prevent overflow issues */
+/* * {
+  box-sizing: border-box;
+} */
